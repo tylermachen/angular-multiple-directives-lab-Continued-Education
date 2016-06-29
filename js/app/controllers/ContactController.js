@@ -12,6 +12,17 @@ function ContactController() {
 
     this.removeContact = function (index) {
         this.contacts.splice(index, 1);
+    };
+
+    this.addContact = function () {
+      debugger;
+        this.contacts.push({
+            name: this.name,
+            phone: this.phoneNumber
+        });
+
+        this.name = '';
+        this.phoneNumber = '';
     }
 }
 
